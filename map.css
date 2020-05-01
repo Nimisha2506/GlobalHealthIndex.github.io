@@ -1,0 +1,57 @@
+
+/*add this file also*/
+
+
+div.google-visualization-tooltip {
+	margin: 0;
+	padding: 5px 0px 0px 5px;
+    box-shadow: none;
+    border:none;
+    background:none;
+    
+}
+
+
+.google-visualization-tooltip ul, .google-visualization-tooltip li, .google-visualization-tooltip img {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    line-height: 1.5em;
+    text-decoration: none;
+    vertical-align: baseline;
+    list-style: none;
+  }
+  
+  /*The content of the tooltip is rendered by the API in an unordered list 
+  With 2 li entries, one for the title and other for the actual tooltip info.
+  */
+  
+  ul.google-visualization-tooltip-item-list {
+      list-style: none;
+      margin:0;
+      padding:0;
+  }
+  
+  li.google-visualization-tooltip-item {
+      list-style: none;
+      margin:0;
+      padding:0;
+  }
+  
+  .google-visualization-tooltip-item * {
+      margin:0;
+      padding:0;
+    list-style: none;
+  }
+  
+  /* This rule controls the Title info */
+  
+  .google-visualization-tooltip-item-list
+  .google-visualization-tooltip-item:first-child {
+    list-style: none;
+    margin:0;
+      padding:0;
+  }
+  

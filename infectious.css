@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+
+
+#navbar{
+
+    font-style: bold; 
+    font: bold;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    width: 100%;
+    height: 50px;
+    background: rgba(0,0,0,0.7);
+}
+
+#navbar ul{
+    display: flex;
+   
+    list-style: none;
+    padding-top: 1rem;
+    width: 100%;
+    justify-content: center;
+}
+
+#navbar ul li{
+    align-items: right;
+    margin: 0 1rem;
+    padding: 5 rem;
+
+}
+
+#navbar ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #f4f4f4;
+
+}
+
+#navbar ul li a:hover{
+    color: grey;
+}
+
+*{
+    margin: 0;
+    
+   
+}
+
+p#abc{
+    background: #333;
+    min-height: 20vh;
+    font-family: 'Ubuntu', sans-serif ;
+    color:#acacac;
+    font-size: 26px;
+    font-weight: 200;
+    padding-top: 55px;
+    position: relative;
+    background: url('grey.jpg') no-repeat center center/
+    cover;
+    
+}
+body{
+    background: url('grey.jpg') no-repeat center center/
+    cover;
+}
+section#sec1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #222;
+    background: url('grey.jpg') no-repeat center center/
+    cover;
+    
+}
+
+.container{
+    width:1000px;
+    height:470px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.box{
+    position: relative;
+    width:300px;
+    height: 400px;
+    background: #000;
+    box-shadow: 0 30px 30px rgba(0,0,0,0.5);
+}
+
+.box .imgBx{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.box .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.box:hover .imgBx img{
+    opacity:0;
+}
+.box .content{
+    position: absolute;
+    bottom: 10px;
+    left: 10%;
+    right:10%;
+    width: 90%;
+    height: 40px;
+    background: rgb(205, 248, 248);
+    transition: 0.5s;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 15px;
+    font-family: 'Ubuntu', sans-serif ;
+}
+.box:hover .content{
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left:0;
+}
+
+.box .content a{
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background: #333;
+    text-decoration: none;
+    color: #fff;
+}
+.box .content h3{
+    margin-bottom: 20px;
+    padding: 0px;
+    font-size: 20px;
+    color: #333;
+
+}
+
+.box .content p{
+    margin:10px 0 0;
+    padding: 0;
+    opacity: 0;
+    line-height: 1.2em;
+    transition: 0.5s;
+    text-align: justify;
+    font-size: 20px;
+}
+
+.box:hover .content p{
+    opacity: 1;
+    transition-delay: 0.25s;
+}
+.main h4{
+    color: #00d2d2;
+}
+.main{
+    background: url('grey.jpg') no-repeat center center/
+    cover;
+    padding-left: 5px;
+    font-size: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #bebebe;
+    padding-top: 20px;
+
+}
+
+.post{
+    width:450px;
+    height:300px;
+    position: relative;
+    cursor: pointer;
+   
+}
+.post:hover .post-s{
+    width:450px;
+    
+}
+
+.post img{
+    width:450px;
+    height:300px;
+    display: block;
+    padding-left: 50px;
+    border-radius: 20%;
+    margin-top: 20px;
+}
+.post-s{
+    width: 0px;
+    height:300px;
+    background: rgba(172, 209, 192, 0.71);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+    color:#222;
+    border-radius: 20%;
+    margin-left: 50px;
+    font-size: 26px;
+    
+    
+    
+}
+.post-s h3{
+    padding-left: 50px;
+}
+#text{
+    line-height: 1.5em;
+    font-size: 26px;
+    margin-top: 75px;
+
+}
+.column {
+    float: left;
+    width: 50%;
+   
+  }
+  
+  /* Clear floats after image containers */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+.flip{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height:50vh;
+    margin-top: 75px;
+}  
+.card{
+    position: relative;
+    width:500px;
+    height: 400px;
+    transform-style: preserve-3d;
+}
+.card .face{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    transition: 2s ease-in-out;
+    transform: perspective(500px) rotateY(0deg);
+
+}
+
+.card .face.front{
+    background:#00d2d2;
+    color: #222;
+    font-family: 'Ubuntu', sans-serif ;
+    font-size: 18px;
+    padding: 10px;
+    line-height: 1.5em;
+
+}
+.card:hover .face.front{
+    transform: perspective(500px) rotateY(180deg);
+}
+.card .face.back{
+    background: #acacac;
+    
+    transform: perspective(500px) rotateY(180deg);
+}
+.card:hover .face.back{
+    transform: perspective(500px) rotateY(360deg);
+}
+
+
+
